@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import colors from '../../constants/colors';
 import Colors from '../../constants/colors';
 
 const GameOverScreen = ({ roundsNumber, userNumber, onNewGame }) => {
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   rounds: {
-    color: colors.accent,
+    color: Colors.accent,
   },
 });
 
