@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
 const Input = (props) => {
+  [enteredValue, setEnteredValue] = useState('');
+
   return (
     <View>
-      <TextInput style={{ ...props.style, ...styles.input }} {...props} />
+      <TextInput style={{ ...styles.input, ...props.style }} {...props} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   input: {
-    height: 30,
     borderBottomColor: 'grey',
-    borderBottomWidth: 10,
-    marginVertical: 4,
+    borderBottomWidth: 1,
+    borderRadius: 4,
+    margin: 3,
+    padding: 3,
   },
 });
 
