@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Image, Button, StyleSheet, Text } from 'react-native';
 import Colors from '../../constants/colors';
 import DefaulStyles from '../../constants/default-styles';
-import { BodyText, TitleText } from '../../components/common/index';
+import { BodyText, TitleText, MainButton } from '../../components/common/index';
 
 const GameOverScreen = ({ roundsNumber, userNumber, onNewGame }) => {
   return (
@@ -26,11 +26,7 @@ const GameOverScreen = ({ roundsNumber, userNumber, onNewGame }) => {
           the number <Text style={styles.highlight}> {userNumber}</Text>
         </BodyText>
       </View>
-      <Button
-        title='NEW GAME'
-        color={Colors.primaryColor}
-        onPress={onNewGame}
-      ></Button>
+      <MainButton onPress={onNewGame}>NEW GAME </MainButton>
     </View>
   );
 };
