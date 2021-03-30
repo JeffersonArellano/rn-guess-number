@@ -7,8 +7,8 @@ const componentName = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'blue',
-    height: '100%',
+    backgroundColor: '#FFFF2E',
+    height: '20%',
   },
 });
 
