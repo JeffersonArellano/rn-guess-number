@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 export default styles = StyleSheet.create({
   screen: {
@@ -7,8 +7,9 @@ export default styles = StyleSheet.create({
     alignItems: 'center',
   },
   inputContainer: {
-    width: 300,
-    maxWidth: '90%',
+    width: '80%',
+    maxWidth: '95%',
+    minWidth: 300,
     alignItems: 'center',
   },
   buttonGroup: {
@@ -17,7 +18,7 @@ export default styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   button: {
-    width: 100,
+    width: Dimensions.get('window').width / 3,
     margin: 5,
   },
   input: {

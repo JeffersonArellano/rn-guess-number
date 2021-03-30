@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Text, Alert, FlatList } from 'react-native';
+import { View, Text, Alert, FlatList, Dimensions } from 'react-native';
 import styles from './GameScreenStyle';
 import { Ionicons } from '@expo/vector-icons';
 import DefaultStyles from '../../constants/default-styles';
@@ -69,6 +69,13 @@ const GameScreen = ({ userChoice, onGameOver }) => {
     setCurrentGuess(nextNumber);
     setPastGuesses((curPastGuess) => [nextNumber.toString(), ...curPastGuess]);
   };
+
+  let listContainerStyle = styles.listContainer;
+
+  if (Dimensions.get('window').width < 350) {
+    listContainerStyle = styles.listContainerBig;
+  }
+
   return (
     <View style={styles.screen}>
       <Text style={DefaultStyles.title}>Opponent's Guess</Text>
@@ -81,7 +88,7 @@ const GameScreen = ({ userChoice, onGameOver }) => {
           <Ionicons name='md-add' size={24} color='white'></Ionicons>
         </MainButton>
       </Card>
-      <View style={styles.listContainer}>
+      <View style={listContainerStyle}>
         {/* <ScrollView contentContainerStyle={styles.list}>
           {pastGuesses.map((guess, index) =>
             renderListItem(guess, pastGuesses.length - index)
