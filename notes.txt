@@ -1,0 +1,16 @@
+**App Loading **
+---------------------------------------------------------------------
+In the next lecture, we'll add the AppLoading component.
+
+We will do this by importing it like this:
+
+    import { AppLoading } from 'expo';
+
+This might fail for you - depending on the version of Expo you're using to follow along.
+
+If it does fail, try this alternative way of adding it:
+
+    expo install expo-app-loading
+    import AppLoading from 'expo-app-loading';
+
+----------------------------------------------------------------------
