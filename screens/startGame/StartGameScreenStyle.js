@@ -18,7 +18,7 @@ export default styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   button: {
-    width: Dimensions.get('window').width / 3,
+    // width: Dimensions.get('window').width / 3,
     margin: 5,
   },
   input: {

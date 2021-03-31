@@ -37,4 +37,10 @@ export default styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
   },
+  controls: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    width: '80%',
+  },
 });
