@@ -14,3 +14,10 @@ If it does fail, try this alternative way of adding it:
     import AppLoading from 'expo-app-loading';
 
 ----------------------------------------------------------------------
+Attached, you find the code snapshots for this module (you also find those attached to multiple lectures in the module).
+
+These resources might also be helpful:
+
+    Dimensions API - Official Docs: https://facebook.github.io/react-native/docs/dimensions#docsNav
+
+    Platform-specific Code - Official Docs: https://facebook.github.io/react-native/docs/platform-specific-code
